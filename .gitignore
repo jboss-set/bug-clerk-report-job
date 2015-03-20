@@ -1,0 +1,13 @@
+# Maven build dir
+target
+dependency-reduced-pom.xml
+# Eclipse files
+.classpath
+.project
+.settings
+# Idea Files
+.idea/
+bugclerk.iml
+# BugClerk specific
+bugclerk.properties
+

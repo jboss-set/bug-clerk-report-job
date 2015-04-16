@@ -45,11 +45,10 @@
           <mainClass>org.jboss.jbossset.bugclerk.cli.VerifyBZsFromFilter</mainClass>
           <cleanupDaemonThreads>false</cleanupDaemonThreads>
           <arguments>
-              <argument>-h</argument>
-              <argument>https://bugzilla.redhat.com/index.cgi</argument>
-              <argument>-f</argument>
-              <argument>${bugclerk.filter.url}</argument>
-              <!--argument>https://bugzilla.redhat.com//buglist.cgi?cmdtype=dorem&amp;list_id=3303150&amp;namedcmd=jboss-eap-6.4.z-superset&amp;remaction=run&amp;sharer_id=213224&amp;ctype=csv</argument-->
+            <argument>-h</argument>
+            <argument>https://bugzilla.redhat.com/index.cgi</argument>
+            <argument>-f</argument>
+            <argument>${bugclerk.filter.url}</argument>
           </arguments>
         </configuration>
       </plugin>

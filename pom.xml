@@ -43,6 +43,7 @@
         </executions>
         <configuration>
           <mainClass>org.jboss.jbossset.bugclerk.cli.VerifyBZsFromFilter</mainClass>
+          <cleanupDaemonThreads>false</cleanupDaemonThreads>
           <arguments>
               <argument>-h</argument>
               <argument>https://bugzilla.redhat.com/index.cgi</argument>

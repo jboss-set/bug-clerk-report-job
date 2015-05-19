@@ -45,7 +45,7 @@
           <mainClass>org.jboss.jbossset.bugclerk.cli.BugClerkWithFilterCLI</mainClass>
           <cleanupDaemonThreads>false</cleanupDaemonThreads>
           <arguments>
-            <argument>-h</argument>
+            <argument>-H</argument>
             <argument>https://bugzilla.redhat.com/index.cgi</argument>
             <argument>-f</argument>
             <argument>${bugclerk.filter.url}</argument>

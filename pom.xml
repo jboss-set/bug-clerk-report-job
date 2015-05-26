@@ -49,6 +49,7 @@
             <argument>https://bugzilla.redhat.com/index.cgi</argument>
             <argument>-f</argument>
             <argument>${bugclerk.filter.url}</argument>
+            <argument>-c</argument>
           </arguments>
         </configuration>
       </plugin>

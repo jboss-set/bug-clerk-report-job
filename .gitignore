@@ -10,4 +10,4 @@ dependency-reduced-pom.xml
 bugclerk.iml
 # BugClerk specific
 bugclerk.properties
-
+bugclerk-report.html

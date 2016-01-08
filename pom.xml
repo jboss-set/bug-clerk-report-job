@@ -45,8 +45,10 @@
           <mainClass>org.jboss.jbossset.bugclerk.cli.BugClerkWithFilterCLI</mainClass>
           <cleanupDaemonThreads>false</cleanupDaemonThreads>
           <arguments>
-            <argument>-H</argument>
-            <argument>https://bugzilla.redhat.com/index.cgi</argument>
+            <argument>-u</argument>
+            <argument>${jboss.set.user.login}</argument>
+            <argument>-p</argument>
+            <argument>${jboss.set.user.password}</argument>
             <argument>-f</argument>
             <argument>${bugclerk.filter.url}</argument>
             <argument>-c</argument>

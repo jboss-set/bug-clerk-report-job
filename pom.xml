@@ -4,7 +4,7 @@
 
   <groupId>org.jboss.jbossset</groupId>
   <artifactId>bugclerk-report</artifactId>
-  <version>0.1.0-SNAPSHOT</version>
+  <version>0.1.0</version>
   <packaging>jar</packaging>
   <name>Bug Clerk Reports</name>
   <description>A inspection tool for bug/task entry, to check the quality of it and ensures it complies to defines rules and processes</description>

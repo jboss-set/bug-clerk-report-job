@@ -54,6 +54,8 @@
             <argument>-c</argument>
             <argument>-h</argument>
             <argument>${bugclerk.report.filename}</argument>
+            <argument>-t</argument>
+            <argument>${bugclerk.tracker.type}</argument>
           </arguments>
         </configuration>
       </plugin>

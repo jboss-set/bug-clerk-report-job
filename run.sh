@@ -1,16 +1,22 @@
 #!/bin/bash
 
-readonly BUGCLERK_VERSION=${BUGCLERK_VERSION:-'0.7.0.Final'}
+readonly BUGCLERK_VERSION=${BUGCLERK_VERSION:-'0.8.0-SNAPSHOT'}
 
-readonly BZ_PASSWORD=${BZ_PASSWORD}
-readonly BZ_USERNAME=${BZ_USERNAME}
+readonly TRACKER_PASSWORD=${TRACKER_PASSWORD}
+readonly TRACKER_USERNAME=${TRACKER_USERNAME}
 
-if [ -z "${BZ_PASSWORD}" ]; then
+readonly TRACKER_TYPE=${TRACKER_TYPE:-'jira'}
+
+if [ -z "${TRACKER_PASSWORD}" ]; then
   echo "Missing Bugzilla Password for user."
   exit 1
 fi
 
-readonly FILTER_URL=${FILTER_URL:-'https://bugzilla.redhat.com//buglist.cgi?cmdtype=dorem&amp;list_id=3303150&amp;namedcmd=jboss-eap-6.4.z-superset&amp;remaction=run&amp;sharer_id=213224&amp;ctype=csv'}
+readonly EAP7_UNRESOLVED='12326686'
+readonly FILTER_URL_ENDPOINT='https://issues.jboss.org/rest/api/latest/filter'
+readonly FILTER_URL=${FILTER_URL:-"${FILTER_URL_ENDPOINT}/${EAP7_UNRESOLVED}"}
 readonly REPORT_FILENAME=${REPORT_FILENAME:-'bugclerk-report.html'}
 
-mvn exec:java "-Dbugclerk.version=${BUGCLERK_VERSION}" "-Dbugclerk.filter.url=${FILTER_URL}" "-Dbugclerk.report.filename=${REPORT_FILENAME}" "-Djboss.set.user.password=${BZ_PASSWORD}" "-Djboss.set.user.login=${BZ_USERNAME}"
+mvn exec:java "-Dbugclerk.version=${BUGCLERK_VERSION}" "-Dbugclerk.filter.url=${FILTER_URL}" \
+    "-Dbugclerk.report.filename=${REPORT_FILENAME}" "-Djboss.set.user.password=${TRACKER_PASSWORD}" \
+    "-Djboss.set.user.login=${TRACKER_USERNAME}" "-Dbugclerk.tracker.type=${TRACKER_TYPE}"

@@ -53,9 +53,9 @@
             <argument>${bugclerk.filter.url}</argument>
             <argument>-c</argument>
             <argument>-h</argument>
-            <argument>${bugclerk.report.filename}</argument>
+            <argument>bugclerk-report.html</argument>
             <argument>-t</argument>
-            <argument>${bugclerk.tracker.type}</argument>
+            <argument>bugzilla</argument>
           </arguments>
         </configuration>
       </plugin>

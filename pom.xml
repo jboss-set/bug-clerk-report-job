@@ -55,7 +55,7 @@
             <argument>-h</argument>
             <argument>bugclerk-report.html</argument>
             <argument>-t</argument>
-            <argument>bugzilla</argument>
+            <argument>jira</argument>
           </arguments>
         </configuration>
       </plugin>

@@ -50,7 +50,7 @@
             <argument>-p</argument>
             <argument>${jboss.set.user.password}</argument>
             <argument>-f</argument>
-            <argument>https://issues.jboss.org/rest/api/latest/filter/12326686</argument>
+            <argument>https://issues.jboss.org/rest/api/latest/filter/12330272</argument>
             <argument>-c</argument>
             <argument>-h</argument>
             <argument>bugclerk-report.html</argument>

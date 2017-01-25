@@ -9,6 +9,4 @@ if [ -z "${TRACKER_PASSWORD}" ]; then
 fi
 
 
-mvn exec:java "-Dbugclerk.filter.url=${FILTER_URL}" \
-    "-Djboss.set.user.password=${TRACKER_PASSWORD}" \
-    "-Djboss.set.user.login=${TRACKER_USERNAME}"
+mvn "-Daphrodite.config=./aphrodite-config.json" exec:java

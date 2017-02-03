@@ -9,5 +9,7 @@ dependency-reduced-pom.xml
 .idea/
 bugclerk.iml
 # BugClerk specific
+*.json
 bugclerk.properties
 bugclerk-report.html
+

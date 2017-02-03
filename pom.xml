@@ -24,7 +24,7 @@
     <dependency>
       <groupId>org.jboss.jbossset</groupId>
       <artifactId>bugclerk</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
+      <version>0.10.0.Final</version>
     </dependency>
   </dependencies>
 
@@ -49,6 +49,7 @@
             <argument>https://issues.jboss.org/rest/api/latest/filter/12324632</argument>
             <argument>-h</argument>
             <argument>bugclerk-report.html</argument>
+            <argument>-c</argument>
           </arguments>
         </configuration>
       </plugin>

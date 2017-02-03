@@ -1,12 +1,10 @@
 #!/bin/bash
 
-readonly TRACKER_PASSWORD=${TRACKER_PASSWORD}
-readonly TRACKER_USERNAME=${TRACKER_USERNAME}
+readonly APHRODITE_CONFIG_FILE=$(pwd)/aphrodite-config.json
 
-if [ -z "${TRACKER_PASSWORD}" ]; then
-  echo "Missing Bugzilla Password for user."
+if [ ! -e "${APHRODITE_CONFIG_FILE}" ]; then
+  echo "Aphrodite config file does not exist: ${APHRODITE_CONFIG_FILE}"
   exit 1
 fi
 
-
-mvn "-Daphrodite.config=./aphrodite-config.json" exec:java
+mvn "-Daphrodite.config=${APHRODITE_CONFIG_FILE}" exec:java

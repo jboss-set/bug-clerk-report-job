@@ -24,7 +24,7 @@
     <dependency>
       <groupId>org.jboss.jbossset</groupId>
       <artifactId>bugclerk</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
+      <version>0.10.0.Final</version>
     </dependency>
   </dependencies>
 
@@ -49,6 +49,7 @@
             <argument>https://bugzilla.redhat.com//buglist.cgi?cmdtype=dorem&amp;amp;list_id=3303150&amp;amp;namedcmd=jboss-eap-6.4.z-superset&amp;amp;remaction=run&amp;amp;sharer_id=213224&amp;amp;ctype=csv</argument>
             <argument>-h</argument>
             <argument>bugclerk-report.html</argument>
+            <argument>-c</argument>
           </arguments>
         </configuration>
       </plugin>

@@ -1,3 +1,6 @@
+# Aphrodite
+aphrodite-config.json
+streams.json
 # Maven build dir
 target
 dependency-reduced-pom.xml

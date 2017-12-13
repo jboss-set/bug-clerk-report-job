@@ -4,7 +4,7 @@
 
   <groupId>org.jboss.jbossset</groupId>
   <artifactId>bugclerk-report</artifactId>
-  <version>EAP_710</version>
+  <version>Backlog</version>
   <packaging>jar</packaging>
   <name>Bug Clerk Reports</name>
   <description>A inspection tool for bug/task entry, to check the quality of it and ensures it complies to defines rules and processes</description>

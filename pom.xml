@@ -49,6 +49,7 @@
             <argument>https://issues.jboss.org/rest/api/latest/filter/12317605</argument>
             <argument>-h</argument>
             <argument>bugclerk-report.html</argument>
+            <argument>-c</argument>
           </arguments>
         </configuration>
       </plugin>

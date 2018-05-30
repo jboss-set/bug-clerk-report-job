@@ -24,7 +24,7 @@
     <dependency>
       <groupId>org.jboss.jbossset</groupId>
       <artifactId>bugclerk-dist</artifactId>
-      <version>1.0.2</version>
+      <version>1.0.3.Final</version>
     </dependency>
   </dependencies>
 

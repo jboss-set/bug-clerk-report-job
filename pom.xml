@@ -46,7 +46,7 @@
           <cleanupDaemonThreads>false</cleanupDaemonThreads>
           <arguments>
             <argument>-f</argument>
-            <argument>https://issues.jboss.org/rest/api/latest/filter/12341905</argument>
+            <argument>https://issues.redhat.com/rest/api/latest/filter/12341905</argument>
             <argument>-h</argument>
             <argument>bugclerk-report.html</argument>
             <argument>-c</argument>

@@ -4,7 +4,7 @@
 
   <groupId>org.jboss.jbossset</groupId>
   <artifactId>bugclerk-report</artifactId>
-  <version>EAP_730</version>
+  <version>EAP_740</version>
   <packaging>jar</packaging>
   <name>Bug Clerk Reports</name>
   <description>A inspection tool for bug/task entry, to check the quality of it and ensures it complies to defines rules and processes</description>
@@ -46,7 +46,7 @@
           <cleanupDaemonThreads>false</cleanupDaemonThreads>
           <arguments>
             <argument>-f</argument>
-            <argument>https://issues.redhat.com/rest/api/latest/filter/12341905</argument>
+            <argument>https://issues.redhat.com/rest/api/latest/filter/12424790</argument>
             <argument>-h</argument>
             <argument>bugclerk-report.html</argument>
             <argument>-c</argument>
